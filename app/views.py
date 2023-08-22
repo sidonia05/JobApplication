@@ -6,5 +6,5 @@ def hello (request):
     return HttpResponse ('Never give up. Today is hard, '
                          'tomorrow will be worse, but the day after tomorrow will be sunshine.')
 
-def job_detail(request):
-    return HttpResponse ('Job detail page')
+def job_detail(request, id):
+    return HttpResponse (f'Job detail page {id}')
